@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.akash.edvora.HomeScreen"
+        android:label="home_screen"
+        tools:layout="@layout/home_screen" />
+    <fragment
+        android:id="@+id/nearest"
+        android:name="com.akash.edvora.screens.Nearest"
+        android:label="nearest"
+        tools:layout="@layout/nearest" />
+    <fragment
+        android:id="@+id/upComing"
+        android:name="com.akash.edvora.UpComing"
+        android:label="up_coming"
+        tools:layout="@layout/up_coming" />
+    <fragment
+        android:id="@+id/past"
+        android:name="com.akash.edvora.Past"
+        android:label="past"
+        tools:layout="@layout/past" />
+</navigation>

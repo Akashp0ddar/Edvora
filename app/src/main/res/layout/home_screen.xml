@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_292929"
+    tools:context=".HomeScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/_101010"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="@string/edvora"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@id/clTopBar"
+            app:layout_constraintStart_toStartOf="@id/clTopBar"
+            app:layout_constraintTop_toTopOf="@id/clTopBar" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="20dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="@id/clTopBar"
+            app:layout_constraintEnd_toEndOf="@id/clTopBar"
+            app:layout_constraintTop_toTopOf="@id/clTopBar" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvProfileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/name"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/ivProfileImage"
+            app:layout_constraintEnd_toStartOf="@id/ivProfileImage"
+            app:layout_constraintTop_toTopOf="@id/ivProfileImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvRides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/rides"
+        android:textColor="@color/ababab"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clTopBar" />
+
+    <TextView
+        android:id="@+id/tvFilters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:drawablePadding="5dp"
+        android:text="@string/filters"
+        android:textColor="@color/_f2f2f2"
+        android:textSize="12sp"
+        app:drawableStartCompat="@drawable/vector"
+        app:layout_constraintBottom_toBottomOf="@id/tvRides"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvRides" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlRides"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/_292929"
+        app:layout_constraintBottom_toBottomOf="@id/tvRides"
+        app:layout_constraintEnd_toStartOf="@id/tvFilters"
+        app:layout_constraintStart_toEndOf="@id/tvRides"
+        android:scrollbarSize="100dp"
+        app:layout_constraintTop_toTopOf="@id/tvRides"
+        app:tabIndicatorColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/_D0CBCB" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNearest"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tvFilters"
+        app:layout_constraintStart_toStartOf="@id/tvRides"
+        app:layout_constraintTop_toBottomOf="@id/tlRides"
+        tools:itemCount="2"
+        tools:listitem="@layout/item_nearest_rv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
