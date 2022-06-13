@@ -2,9 +2,7 @@ package com.akash.edvora
 
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -12,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.akash.edvora.adapters.MyAdapter
 import com.akash.edvora.databinding.HomeScreenBinding
 import com.akash.edvora.repository.Repository
+import com.akash.edvora.utils.DialogBox
 import com.google.android.material.tabs.TabLayout
 
 
@@ -33,6 +32,8 @@ class HomeScreen : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
         setupRecyclerView()
         val tabLayout = binding.tlRides
         val repository = Repository()
@@ -111,7 +112,25 @@ class HomeScreen : Fragment() {
             override fun onTabReselected(tab: TabLayout.Tab?) {
             }
         })
+
+        binding.tvFilters.setOnClickListener {
+//            val popup = PopupMenu(requireContext(),binding.tvFilters)
+//            popup.inflate(R.menu.filters)
+//            popup.setOnMenuItemClickListener {
+//                Toast.makeText(requireContext(), "Item "+it.title, Toast.LENGTH_SHORT).show()
+//                true
+//            }
+//            popup.show()
+
+
+var dialog = DialogBox()
+            fragmentManager?.let { it1 -> dialog.show(it1,"Custom Dialog") }
+        }
+
+
     }
+
+
 
     private fun setupRecyclerView() {
         binding.rvNearest.adapter = myAdapter

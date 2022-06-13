@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/akash/AndroidStudioProjects/Edvora/app/src/main/res/drawable/layout_round_corners.xml" value="0.207" />
         <entry key="..\:/Users/akash/AndroidStudioProjects/Edvora/app/src/main/res/drawable/layout_roundcorners.xml" value="0.248" />
         <entry key="..\:/Users/akash/AndroidStudioProjects/Edvora/app/src/main/res/drawable/round_corner.xml" value="0.248" />
         <entry key="..\:/Users/akash/AndroidStudioProjects/Edvora/app/src/main/res/drawable/tv_round_coner.xml" value="0.247" />
         <entry key="..\:/Users/akash/AndroidStudioProjects/Edvora/app/src/main/res/font/myfont.xml" value="0.27239583333333334" />
         <entry key="..\:/Users/akash/AndroidStudioProjects/Edvora/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/akash/AndroidStudioProjects/Edvora/app/src/main/res/layout/dialog_box.xml" value="0.6" />
         <entry key="..\:/Users/akash/AndroidStudioProjects/Edvora/app/src/main/res/layout/home_screen.xml" value="0.264" />
         <entry key="..\:/Users/akash/AndroidStudioProjects/Edvora/app/src/main/res/layout/item_nearest_rv.xml" value="0.264" />
         <entry key="..\:/Users/akash/AndroidStudioProjects/Edvora/app/src/main/res/layout/item_nearest_rv_single_item.xml" value="0.22826086956521738" />

@@ -11,18 +11,8 @@
         android:label="home_screen"
         tools:layout="@layout/home_screen" />
     <fragment
-        android:id="@+id/nearest"
-        android:name="com.akash.edvora.screens.Nearest"
-        android:label="nearest"
-        tools:layout="@layout/nearest" />
-    <fragment
-        android:id="@+id/upComing"
-        android:name="com.akash.edvora.UpComing"
-        android:label="up_coming"
-        tools:layout="@layout/up_coming" />
-    <fragment
-        android:id="@+id/past"
-        android:name="com.akash.edvora.Past"
-        android:label="past"
-        tools:layout="@layout/past" />
+        android:id="@+id/dialogBox"
+        android:name="com.akash.edvora.utils.DialogBox"
+        android:label="dialog_box"
+        tools:layout="@layout/dialog_box" />
 </navigation>

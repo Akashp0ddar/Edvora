@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/City"
+        android:title="City"/>
 
+    <item android:id="@+id/state"
+        android:title="State">
+        <menu>
+            <item android:id="@+id/Punjab"
+                android:title="Punjab"/>
+            <item android:id="@+id/UttraKhand"
+                android:title="UttraKhand"/>
+        </menu>
+    </item>
 
 </menu>
