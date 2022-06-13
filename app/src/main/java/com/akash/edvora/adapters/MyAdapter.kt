@@ -1,15 +1,15 @@
 package com.akash.edvora.adapters
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.akash.edvora.databinding.ItemNearestRvBinding
-import com.akash.edvora.rides.Rides
-import com.akash.edvora.rides.RidesItem
+import com.akash.edvora.rides.Responses
 import com.bumptech.glide.Glide
 
 class MyAdapter() : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
-    private var myList = emptyList<RidesItem>()
+    private var myList = emptyList<Responses>()
 
     class ViewHolder(val binding: ItemNearestRvBinding) : RecyclerView.ViewHolder(binding.root)
 
@@ -32,7 +32,7 @@ class MyAdapter() : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
         return myList.size
     }
 
-    fun setData(newList: List<RidesItem>) {
+    fun setData(newList: List<Responses>) {
         myList = newList
         notifyDataSetChanged()
     }

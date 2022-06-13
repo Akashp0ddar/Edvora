@@ -14,4 +14,12 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="circle">
+        <item name="cornerRadius">50dp</item>
+    </style>
+
+    <style name="textapperance">
+        <item name="textAppearanceBody1"></item>
+    </style>
+
 </resources>
